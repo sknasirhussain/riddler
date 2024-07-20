@@ -21,11 +21,4 @@ function nextRiddle(currentRiddle) {
     }
 }
 
-function showCompletionForTesting() {
-    document.querySelectorAll('.card').forEach(card => card.style.display = 'none');
-    document.getElementById('completion').style.display = 'block';
-}
-
-// Call this function to jump directly to the completion page
-showCompletionForTesting();
 
