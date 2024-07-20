@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div class="card" id="riddle1">
+            <h2>Riddle 1</h2>
+            <p>I belong to you, yet I'm not yours alone. I'm used in greetings and goodbyes, and I always come first. What am I?</p>
+            <input type="text" id="answer1" placeholder="Your answer">
+            <button onclick="checkAnswer(1, 'My')">Submit</button>
+            <p class="message" id="message1"></p>
+            <button class="next" id="next1" onclick="nextRiddle(1)" style="display:none;">Next Stage</button>
+        </div>
+        
+        <div class="card" id="riddle2" style="display:none;">
+            <h2>Riddle 2</h2>
+            <p>I'm a journey from birth to death, a collection of moments, big and small. Without me, you would not exist at all. What am I?</p>
+            <input type="text" id="answer2" placeholder="Your answer">
+            <button onclick="checkAnswer(2, 'Life')">Submit</button>
+            <p class="message" id="message2"></p>
+            <button class="next" id="next2" onclick="nextRiddle(2)" style="display:none;">Next Stage</button>
+        </div>
+        
+        <div class="card" id="riddle3" style="display:none;">
+            <h2>Riddle 3</h2>
+            <p>I come in many flavors, sweet or bitter, joyous or sad. I can be the best part of your day, or the one that makes you mad. What am I?</p>
+            <input type="text" id="answer3" placeholder="Your answer">
+            <button onclick="checkAnswer(3, 'Suck')">Submit</button>
+            <p class="message" id="message3"></p>
+            <button class="next" id="next3" onclick="nextRiddle(3)" style="display:none;">Next Stage</button>
+        </div>
+        
+        <div class="card" id="riddle4" style="display:none;">
+            <h2>Riddle 4</h2>
+            <p>I'm the opposite of with, I'm the absence of light. If you lack me, everything's not quite right. What am I?</p>
+            <input type="text" id="answer4" placeholder="Your answer">
+            <button onclick="checkAnswer(4, 'Without')">Submit</button>
+            <p class="message" id="message4"></p>
+            <button class="next" id="next4" onclick="nextRiddle(4)" style="display:none;">Next Stage</button>
+        </div>
+        
+        <div class="card" id="riddle5" style="display:none;">
+            <h2>Riddle 5</h2>
+            <p>You see me when you look in the mirror, I'm the one who stands by you through joy and sorrow. I am the reason you wake up tomorrow. What am I?</p>
+            <input type="text" id="answer5" placeholder="Your answer">
+            <button onclick="checkAnswer(5, 'You')">Submit</button>
+            <p class="message" id="message5"></p>
+            <button class="next" id="next5" onclick="nextRiddle(5)" style="display:none;">Next Stage</button>
+        </div>
+        
+        <div class="card" id="completion" style="display:none;">
+            <h2>Congratulations!</h2>
+            <p>You've solved all the riddles: "My life would suck without you."</p>
+            <p>Enjoy the music video:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cRM70Jw7F4M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
